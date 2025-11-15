@@ -17,3 +17,14 @@
     mask-image: linear-gradient(to bottom, black 70%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
 }
+
+/* About Start */
+
+.wiki .container h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+
+}
+
+/* About End */
