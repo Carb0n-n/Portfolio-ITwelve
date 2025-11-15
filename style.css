@@ -4,7 +4,17 @@
     font-weight: bold;
     color: #F74641;
 }
+.valve:hover
+{
+    font-weight:750;
+    color: #F74641;
+}
 
+.navbutton:hover
+{
+    color: #F74641;
+    font-weight: bold;
+}
 
 
 /* Navbar End */
@@ -18,6 +28,12 @@
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
 }
 
+#motto
+{
+    font-weight: bolder;
+    font-size: large;
+}
+
 /* About Start */
 
 .wiki .container h1{
@@ -26,5 +42,6 @@
     font-size: 40px;
 
 }
+
 
 /* About End */
