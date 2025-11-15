@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="business">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,30 +13,61 @@
 </head>
 <body>
     
-    <!-- Navbar Start -->
+    <!-- Navbar -->
      <section>
         <div class="navbar bg-base-100 shadow-sm">
-        <div class="flex-none">
-            <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
-            </button>
+            <div class="flex-none">
+                <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+                </button>
+            </div>
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl valve">VALVe</a>
+                │
+                <a class="btn btn-ghost text-xl">Games</a>
+                <a class="btn btn-ghost text-xl">About</a>
+                <a class="btn btn-ghost text-xl">FAQ</a>
+                <a class="btn btn-ghost text-xl">Contact</a>
+            </div>
+                
+            <div class="flex-none">
+                <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
+                </button>
+            </div>
         </div>
-        <div class="flex-1">
-            <a class="btn btn-ghost text-xl valve">VALVe</a>
-            │
-            <a class="btn btn-ghost text-xl">Games</a>
-            <a class="btn btn-ghost text-xl">About</a>
-            <a class="btn btn-ghost text-xl">FAQ</a>
-            <a class="btn btn-ghost text-xl">Contact</a>
-        </div>
-            
-        <div class="flex-none">
-            <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
-            </button>
-        </div>
-    </div>
 
+        <!-- Side bar -->
+        <input id="sidebar-toggle" type="checkbox" class="hidden" />
+        <link rel="stylesheet" href="sidebar.css">
+
+        <!-- Sliding Sidebar -->
+        <aside class="site-sidebar fixed top-0 left-0 z-50 h-full w-54 bg-base-200 border-r shadow-lg">
+            <div class="p-4">
+                <div class="flex items-center justify-between mb-4">
+                    <img src="/Web-Portfolio-Collab-ITwelve/assets/Valve-Logo.png" alt="" class="w-40">
+                    <label for="sidebar-toggle" class="btn btn-ghost btn-sm">×</label>
+                </div>
+                
+                <ul class="menu menu-compact">  
+                    <li><a href="#header" class="justify-between">Home</a></li>
+                    <li><a href="#games">Games</a></li> <br>
+                    <li><a href="#about">About</a></li> <br>
+                    <li><a href="#faq">FAQ</a></li> <br>
+                    <li><a href="#contact">Contact</a></li> <br>
+                </ul>
+
+                <div class="mt-6 text-sm opacity-70">
+                    <br> <br><br><br>
+                    <p class="copyright">Copyright</p>
+                    <p class="copyright">lolololol</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Clickable overlay to close sidebar -->
+        <label for="sidebar-toggle" class="site-overlay fixed inset-0 z-40 bg-black/40"></label>
+        <script src="sidebar.js"></script>
      </section>
 
      <section id="header">
@@ -47,7 +78,6 @@
                 class="object-cover w-full h-full brightness-75 [mask-image:linear-gradient(to_bottom,black_70%,transparent)]" 
                 id="banner"
             />
-    <!-- Navbar End -->
 
             <!-- Foreground image (on top) -->
             <img 
