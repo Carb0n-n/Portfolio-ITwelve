@@ -5,13 +5,13 @@
     color: #F74641;
 }
 
-.red {
-    color: #F74641;
-}
-
 .valve:hover
 {
     font-weight:750;
+    color: #F74641;
+}
+
+.red {
     color: #F74641;
 }
 
@@ -21,9 +21,13 @@
     font-weight: bold;
 }
 
-#text-about
+.title
 {
-    font-size: x-large;
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: bold;
+    text-decoration: underline;
+    font-size: 50px;
 }
 
 
@@ -46,27 +50,8 @@
 
 /* About Start */
 
-#abouttitle
-{
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 40px;
 
-}
-
-.wiki .container h1 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 40px;
-    font-style: bold;
-}
-
-.wiki-box .box mt-6 img {
-    width: 100%;
-    max-width: 100%;
-}
-
-.wiki-box .box a {
+.box a {
     border: 1px solid #F74641;
     padding: 10px 20px;
     color: #F74641;
@@ -74,9 +59,65 @@
     border-radius: 5px;
 }
 
-.wiki-box .box a:hover {
+.box a:hover {
     background-color: #F74641;
     color: black;
 }
 
+.grid-rtl {
+    direction: rtl;
+}
+
+.grid-rtl > * {
+    direction: ltr; /* ensures text is normal left→right */
+}
+
+#about .about-box
+{   
+    background: #191919;
+    padding: 40px;      /* space INSIDE the box */
+    margin: 30px;       /* space OUTSIDE (between box and screen edges) */
+    border-radius: 20px;
+    width: 100%;
+}
+
+#about .top-box
+{
+    display: flex;
+    margin-bottom: 3pc;
+    gap: 3pc;
+}
+
+#about .top-box.text-group
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3pc;
+    gap: 3pc;
+}
+
+#about .bottom-box
+{
+    display: flex;
+    justify-content: end;   
+}
+
 /* About End */
+#about .text-about
+{
+    font-size: x-large;
+    max-width: 1000px;
+}
+
+#about .text-about.right
+{
+    font-size: x-large;
+    max-width: 1000px;
+    text-align: right;
+}
+
+.highlight
+{
+    text-decoration: underline;
+    font-style: italic;
+}

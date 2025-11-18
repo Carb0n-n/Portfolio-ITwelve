@@ -18,7 +18,7 @@
         <div class="navbar bg-base-100 shadow-sm fixed top-0 left-0 w-full z-50">
             <div class="flex-none">
                 <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+                <svg xmlns="http://www.w3.or    g/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
                 </button>
             </div>
             <div class="flex-1">
@@ -26,7 +26,7 @@
                 │
                 <a class="btn btn-ghost text-xl navbutton">About</a>
                 <a class="btn btn-ghost text-xl navbutton">Users Active</a>
-                <a class="btn btn-ghost text-xl navbutton">Projects</a>
+                <a class="btn btn-ghost text-xl navbutton">Products</a>
                 <a class="btn btn-ghost text-xl navbutton">FAQ</a>
                 <a class="btn btn-ghost text-xl navbutton">Contact</a>
             </div>
@@ -54,7 +54,7 @@
                     <li><a href="#header" class="justify-between">Home</a></li>
                    <li><a href="#about">About</a></li> <br>
                     <li><a href="#User Active">User Active</a></li> <br>
-                    <li><a href="#project">Projects</a></li> <br>
+                    <li><a href="#project">Products</a></li> <br>
                     <li><a href="#faq">FAQ</a></li> <br>
                     <li><a href="#contact">Contact</a></li> <br>
                 </ul>
@@ -98,49 +98,56 @@
 
     <!-- About Start -->
     <br><br>
-    <h1 id="abouttitle">About Valve</h1>
-    <div id="about" class="p-4">
-        <div class="rounded-2xl bg-[#191919] p-6 mx-auto max-w-1xl">
-            <div class="container">
-                <div class="wiki-box">
-                    <div class="box">
-                        <div class="grid grid-cols-4 items-start gap-6">
-                            <img src="./assets/gaben.png" alt="" class="w-84">
-                            <p class="col-span-3 max-w-full" id="text-about">
-                                <span class="red">VALVe</span> Corporation, also known as <span class="red">VALVe</span> Software, is an American video game developer, publisher, and digital distribution company headquartered in Bellevue, Washington. It is the developer of the software distribution platform Steam and the game franchises Half-Life, Counter-Strike, Portal, Day of Defeat, Team Fortress 2, Left 4 Dead and Dota.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box mt-6">
-                        <div class="grid grid-cols-4 items-start gap-6">
-                            <p class="col-span-3 max-w-full" id="text-about">
-                                <span class="red">VALVe</span> Corporation, also known as <span class="red">VALVe</span> Software, is an American video game developer, publisher, and digital distribution company headquartered in Bellevue, Washington. It is the developer of the software distribution platform Steam and the game franchises Half-Life, Counter-Strike, Portal, Day of Defeat, Team Fortress 2, Left 4 Dead and Dota.
-                            </p>
-                            <img src="./assets/Hero-V.png" alt="" class="w-84">
-                            <a href="https://id.wikipedia.org/wiki/Valve_Corporation" target="_blank"> 
-                                Read More on Wikipedia </a>
-                        </div>
-                    </div>
+    <div id="about">
+        <h1 class="title" id="about-title">About <span class="valve">Valve</span></h1>    
+
+        <div class="about-box">
+            <section class="top-box">
+                <img src="assets/gaben.png" alt="" class="w-100">    
+                <div class="text-group">
+
+                    <p class="text-about left">
+                        <span class="red">VALVe</span> Corporation, also known as <span class="red">VALVe</span> Software,<br>is an American <span class="highlight">video game developer, publisher, and digital distribution company</span> founded in <span class="highlight">1996</span> by the former Microsoft employee <span class="red">Gabe Newell</span> (a.k.a <span class="highlight">Gaben</span>).
+                    </p>
+                    <br>
+                    <p class="text-about left">
+                        Valve was founded in 1996 by the former Microsoft employees Gabe Newell and Mike Harrington. Their debut game, the first-person shooter (FPS) Half-Life (1998), was a critical and commercial success and had a lasting influence on the FPS genre. 
+                    </p>
+
                 </div>
-            </div>
-
+            </section>
+            <section class="bottom-box">
+                <div class="text-group">
+                    <p class="text-about right">
+                        <span class="red">VALVe</span> has had a profound and lasting impact on the gaming industry through its innovations in game development, digital distribution, and player-driven ecosystems. The company not only created <span class="highlight red">genre-defining</span> titles like <span class="red">Half-Life</span>, <span class="red">Half-Life</span>, and <span class="red">Left 4 Dead</span>, but also transformed how games are purchased and played with the launch of <span class="red highlight">Steam</span>, now <span class="highlight">the world’s</span> <span class="highlight red"></span>.
+                    </p> <br> <br>
+                    <p class="text-about right">
+                            <span class="red">VALVe</span> pioneered <span class="highlight">community-centered features</span> such as the <span class="highlight red">Steam Workshop</span>, empowering modders and creators to shape entire game economies. By pushing technological boundaries, championing user freedom, and setting new standards for online distribution, <span class="red">VALVe has helped shape modern PC gaming into what it is today</span>.                
+                    </p>
+                </div>
+                <img src="assets/Hero-V.png" alt="" class="w-100">
+            </section>
         </div>
-
+        <br><br><br>
     </div>
+    
+</div>
+
 
     <!-- About End -->
 
+    <h1 id="products-title" class="title">Products</h1>
     <!-- Statistik Start -->
-
+    
     <div class="stats stats-vertical lg:stats-horizontal w-full shadow-lg">
-    <div class="stat">
-        <div class="stat-figure text-secondary">
-        <svg
+        <div class="stat">
+            <div class="stat-figure text-secondary">
+                <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             class="inline-block w-16 h-16 stroke-current"
-        >
+            >
             <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -148,62 +155,69 @@
             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             ></path>
         </svg>
-        </div>
-        <div>
-            <div class="stat-title text-lg">Users Active of All Times</div>
-            <div class="stat-value text-4xl">1.350.000.000+</div>
-            <div class="stat-desc text-base">1996 - 2025</div>
-        </div>
     </div>
+    <div>
+        <div class="stat-title text-lg">Users Active of All Times</div>
+        <div class="stat-value text-4xl">1.350.000.000+</div>
+        <div class="stat-desc text-base">1996 - 2025</div>
+    </div>
+</div>
 
-    <div class="stat">
-        <div class="stat-figure text-secondary">
+<div class="stat">
+    <div class="stat-figure text-secondary">
         <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="inline-block w-16 h-16 stroke-current"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block w-16 h-16 stroke-current"
         >
-            <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-            ></path>
-        </svg>
-        </div>
-        <div>
-            <div class="stat-title text-lg">Users Active Average</div>
-            <div class="stat-value text-4xl">45.000.000+</div>
-            <div class="stat-desc text-base"> 1996 - 2025 </div>
-        </div>
-    </div>
+        <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+        ></path>
+    </svg>
+</div>
+<div>
+    <div class="stat-title text-lg">Users Active Average</div>
+    <div class="stat-value text-4xl">45.000.000+</div>
+    <div class="stat-desc text-base"> 1996 - 2025 </div>
+</div>
+</div>
 
-    <div class="stat">
-        <div class="stat-figure text-secondary">
+<div class="stat">
+    <div class="stat-figure text-secondary">
         <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="inline-block w-16 h-16 stroke-current"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block w-16 h-16 stroke-current"
         >
-            <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-            ></path>
-        </svg>
-        </div>
-        <div>
-            <div class="stat-title text-lg">Total Net Wort</div>
-            <div class="stat-value text-4xl">$40.000.000.000+</div>
-            <div class="stat-desc text-base"> 1996 - 2025 </div>
-        </div>
-    </div>
-    </div>
+        <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+        ></path>
+    </svg>
+</div>
+<div>
+    <div class="stat-title text-lg">Total Net Wort</div>
+    <div class="stat-value text-4xl">$40.000.000.000+</div>
+    <div class="stat-desc text-base"> 1996 - 2025 </div>
+</div>
+</div>
+</div>
+<!-- Statistik End -->
 
-    <!-- Statistik End -->
+<!-- Product -->
+
+    <div class="" id="product">
+        <div>
+        
+        </div>
+</div>
 
 </body>
 </html>
