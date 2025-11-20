@@ -1,3 +1,8 @@
+.text
+{
+    font-size: x-large;
+    max-width: 1000px;
+}
 /* Navbar Start*/
 
 .valve {
@@ -103,11 +108,6 @@
 }
 
 /* About End */
-#about .text-about
-{
-    font-size: x-large;
-    max-width: 1000px;
-}
 
 #about .text-about.right
 {
@@ -121,3 +121,44 @@
     text-decoration: underline;
     font-style: italic;
 }
+
+/* Products Start */
+
+#products .product-box
+{
+    background-color: #191919;
+    margin: 10pc;
+    margin-top: 2pc;
+    
+}
+
+#products .product-box .games
+{
+    display: flex;
+    padding: 3pc;
+    gap: 10pc;
+    justify-content: center;
+    height: max-content;
+}
+
+.games
+{
+    text-align: right;
+}
+
+.games .text
+{
+    max-width: 30pc;
+}
+
+.games .title
+{
+    text-align: right;
+    margin-bottom: 50px;
+    font-style: bold;
+    text-decoration: solid;
+    font-size: 50px;
+    color: #F74641;
+}
+
+/* Products End */

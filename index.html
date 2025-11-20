@@ -22,10 +22,10 @@
                 </button>
             </div>
             <div class="flex-1">
-                <a class="btn btn-ghost text-xl valve">VALVe</a>
+                <a class="btn btn-ghost text-xl valve" href="#header">VALVe</a>
                 │
-                <a class="btn btn-ghost text-xl navbutton">About</a>
-                <a class="btn btn-ghost text-xl navbutton">Users Active</a>
+                <a class="btn btn-ghost text-xl navbutton" href="#about">About</a>
+                <a class="btn btn-ghost text-xl navbutton" href="#products">Users Active</a>
                 <a class="btn btn-ghost text-xl navbutton">Products</a>
                 <a class="btn btn-ghost text-xl navbutton">FAQ</a>
                 <a class="btn btn-ghost text-xl navbutton">Contact</a>
@@ -52,7 +52,7 @@
                 
                 <ul class="menu menu-compact">  
                     <li><a href="#header" class="justify-between">Home</a></li>
-                   <li><a href="#about">About</a></li> <br>
+                    <li><a href="#about">About</a></li> <br>
                     <li><a href="#User Active">User Active</a></li> <br>
                     <li><a href="#project">Products</a></li> <br>
                     <li><a href="#faq">FAQ</a></li> <br>
@@ -106,11 +106,11 @@
                 <img src="assets/gaben.png" alt="" class="w-100">    
                 <div class="text-group">
 
-                    <p class="text-about left">
+                    <p class="text left">
                         <span class="red">VALVe</span> Corporation, also known as <span class="red">VALVe</span> Software,<br>is an American <span class="highlight">video game developer, publisher, and digital distribution company</span> founded in <span class="highlight">1996</span> by the former Microsoft employee <span class="red">Gabe Newell</span> (a.k.a <span class="highlight">Gaben</span>).
                     </p>
                     <br>
-                    <p class="text-about left">
+                    <p class="text left">
                         Valve was founded in 1996 by the former Microsoft employees Gabe Newell and Mike Harrington. Their debut game, the first-person shooter (FPS) Half-Life (1998), was a critical and commercial success and had a lasting influence on the FPS genre. 
                     </p>
 
@@ -118,10 +118,10 @@
             </section>
             <section class="bottom-box">
                 <div class="text-group">
-                    <p class="text-about right">
+                    <p class="text right">
                         <span class="red">VALVe</span> has had a profound and lasting impact on the gaming industry through its innovations in game development, digital distribution, and player-driven ecosystems. The company not only created <span class="highlight red">genre-defining</span> titles like <span class="red">Half-Life</span>, <span class="red">Half-Life</span>, and <span class="red">Left 4 Dead</span>, but also transformed how games are purchased and played with the launch of <span class="red highlight">Steam</span>, now <span class="highlight">the world’s</span> <span class="highlight red"></span>.
                     </p> <br> <br>
-                    <p class="text-about right">
+                    <p class="text right">
                             <span class="red">VALVe</span> pioneered <span class="highlight">community-centered features</span> such as the <span class="highlight red">Steam Workshop</span>, empowering modders and creators to shape entire game economies. By pushing technological boundaries, championing user freedom, and setting new standards for online distribution, <span class="red">VALVe has helped shape modern PC gaming into what it is today</span>.                
                     </p>
                 </div>
@@ -203,7 +203,7 @@
     </svg>
 </div>
 <div>
-    <div class="stat-title text-lg">Total Net Wort</div>
+    <div class="stat-title text-lg">Total Net Worth</div>
     <div class="stat-value text-4xl">$40.000.000.000+</div>
     <div class="stat-desc text-base"> 1996 - 2025 </div>
 </div>
@@ -213,12 +213,61 @@
 
 <!-- Product -->
 
-    <div class="" id="product">
-        <div>
-        
-        </div>
-</div>
+    <div class="box" id="products">
+        <div class="product-box">
+            <br>
+            <h1 class="title">Games</h1>
 
+            <div class="games">
+                <div class="carousel w-84">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img
+                        src="assets/game-cover/hla.jpg"
+                        class="w-84 rounded-box" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img
+                        src="assets/game-cover/cs2.jpeg"
+                        class="w-84 rounded-box" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img
+                        src="assets/game-cover/tf2.jpeg"
+                        class="w-84 rounded-box" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img
+                        src="assets/game-cover/pt2.jpg"
+                        class="w-84 rounded-box" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide5" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>                
+                <div class="text-group">
+                    <h1 class="title">Lorem penis</h1>
+                    <p class="text left" id="games-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi nihil beatae perferendis aliquam corrupti explicabo, quia est vel praesentium earum sapiente dolor tenetur dolores iure ex reprehenderit. Laborum, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam iste deserunt architecto molestiae id, error adipisci numquam culpa placeat rerum facilis est assumenda fugiat. Doloribus minima ullam error corporis?</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
 
