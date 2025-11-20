@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Valve Corp - Portfolio</title>
 </head>
 <body>
@@ -218,6 +220,41 @@
         
         </div>
 </div>
+
+      <!-- Product -->
+    <div class="w-full relative px-4 py-8">
+      <div class="swiper multiple-slide-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide !w-auto">
+            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
+              <img src="./assets/hardware/ctrl.png" alt="Product 1" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="swiper-slide !w-auto">
+            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
+              <img src="./assets/hardware/deck.png" alt="Product 2" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="swiper-slide !w-auto">
+            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
+              <img src="./assets/hardware/link.png" alt="Product 3" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="swiper-slide !w-auto">
+            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
+              <img src="./assets/hardware/vr.png" alt="Product 4" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation buttons -->
+        <button class="swiper-button-prev !w-12 !h-12 !bg-indigo-600 rounded-full !text-white"></button>
+        <button class="swiper-button-next !w-12 !h-12 !bg-indigo-600 rounded-full !text-white"></button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
