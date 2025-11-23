@@ -54,7 +54,7 @@
                 
                 <ul class="menu menu-compact">  
                     <li><a href="#header" class="justify-between">Home</a></li>
-                    <li><a href="#about">About</a></li> <br>
+                    <li><a href="#about">About</a></li> <br> 
                     <li><a href="#User Active">User Active</a></li> <br>
                     <li><a href="#project">Products</a></li> <br>
                     <li><a href="#faq">FAQ</a></li> <br>
@@ -134,9 +134,8 @@
     </div>
     
 </div>
+<!-- About End -->
 
-
-    <!-- About End -->
 
     <h1 id="products-title" class="title">Products</h1>
     <!-- Statistik Start -->
@@ -218,92 +217,60 @@
     <div class="box" id="products">
         <div class="product-box">
             <br>
-            <h1 class="title">Games</h1>
+            <h1 class="title">Game Series</h1>
 
             <div class="games">
-                <div class="carousel w-84">
-                    <div id="slide1" class="carousel-item relative w-full">
-                        <img
-                        src="assets/game-cover/hla.jpg"
-                        class="w-84 rounded-box" />
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
+        
+                    <!-- WRAPPER (buttons stay here) -->
+                    <div class="relative w-84">
+
+                        <!-- CAROUSEL (only this scrolls) -->
+                        <div class="carousel w-full">
+                            <div id="slide0" class="carousel-item w-full">
+                                <img src="assets/game-cover/hla.jpg" class="w-84 rounded-box" />
+                            </div>
+                            <div id="slide1" class="carousel-item w-full">
+                                <img src="assets/game-cover/cs2.jpeg" class="w-84 rounded-box" />
+                            </div>
+                            <div id="slide2" class="carousel-item w-full">
+                                <img src="assets/game-cover/tf2.jpeg" class="w-84 rounded-box" />
+                            </div>
+                            <div id="slide3" class="carousel-item w-full">
+                                <img src="assets/game-cover/pt2.jpg" class="w-84 rounded-box" />
+                            </div>
+                            <div id="slide4" class="carousel-item w-full">
+                                <img src="assets/game-cover/l4d.png" class="w-84 rounded-box" />
+                            </div>
+                            <div id="slide5" class="carousel-item w-full">
+                                <img src="assets/game-cover/dot.png" class="w-84 rounded-box" />
+                            </div>
                         </div>
-                    </div>
-                    <div id="slide2" class="carousel-item relative w-full">
-                        <img
-                        src="assets/game-cover/cs2.jpeg"
-                        class="w-84 rounded-box" />
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide3" class="btn btn-circle">❯</a>
+
+                        <!-- FIXED BUTTONS (OUTSIDE THE CAROUSEL!) -->
+                        <div class="absolute inset-0 flex items-center justify-between px-4">
+                            <button onclick="prevSlide()" class="btn btn-circle">❮</button>
+                            <button onclick="nextSlide()" class="btn btn-circle">❯</button>
                         </div>
+
                     </div>
-                    <div id="slide3" class="carousel-item relative w-full">
-                        <img
-                        src="assets/game-cover/tf2.jpeg"
-                        class="w-84 rounded-box" />
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide2" class="btn btn-circle">❮</a>
-                            <a href="#slide4" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide4" class="carousel-item relative w-full">
-                        <img
-                        src="assets/game-cover/pt2.jpg"
-                        class="w-84 rounded-box" />
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide3" class="btn btn-circle">❮</a>
-                            <a href="#slide5" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                </div>                
-                <div class="text-group">
-                    <h1 class="title">Lorem penis</h1>
-                    <p class="text left" id="games-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi nihil beatae perferendis aliquam corrupti explicabo, quia est vel praesentium earum sapiente dolor tenetur dolores iure ex reprehenderit. Laborum, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam iste deserunt architecto molestiae id, error adipisci numquam culpa placeat rerum facilis est assumenda fugiat. Doloribus minima ullam error corporis?</p>
+
+                    <div class="text-group">
+                        <h1 class="title" id="games-title">Half-Life</h1>
+                        <p class="text" id="games-info-1">
+                            Lorem <span class="red">ipsum</span> ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quod cum maxime, numquam, doloremque quidem cupiditate rem aliquid iure aperiam explicabo quo mollitia adipisci vel voluptatibus dolor magni sunt voluptas?
+                        </p>
+                        <br>
+                        <p class="text" id="games-info-2">
+                            Lorem ipsum dolor sit amet consectetur. sit amet consectetur sit amet consectetur
+                        </p>
                 </div>
             </div>
-
-            
         </div>
-</div>
 
-      <!-- Product -->
-    <div class="w-full relative px-4 py-8">
-      <div class="swiper multiple-slide-carousel">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide !w-auto">
-            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
-              <img src="./assets/hardware/ctrl.png" alt="Product 1" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="swiper-slide !w-auto">
-            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
-              <img src="./assets/hardware/deck.png" alt="Product 2" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="swiper-slide !w-auto">
-            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
-              <img src="./assets/hardware/link.png" alt="Product 3" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="swiper-slide !w-auto">
-            <div class="bg-indigo-50 rounded-2xl h-96 w-80 flex justify-center items-center overflow-hidden">
-              <img src="./assets/hardware/vr.png" alt="Product 4" class="w-full h-full object-cover">
-            </div>
-          </div>
-        </div>
         
-        <!-- Navigation buttons -->
-        <button class="swiper-button-prev !w-12 !h-12 !bg-indigo-600 rounded-full !text-white"></button>
-        <button class="swiper-button-next !w-12 !h-12 !bg-indigo-600 rounded-full !text-white"></button>
-      </div>
+        
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
-
+    
     <script src="index.js"></script>
 </body>
 </html>
