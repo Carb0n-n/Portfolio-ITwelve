@@ -124,6 +124,26 @@
 
 /* Product Start */
 
+/* steam start */
+.steam.logo
+{
+  max-width: 350px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.steam.text
+{
+  font-weight:600;
+}
+
+.blue
+{
+  color: #63abcb;
+}
+
+/* steam start */
+
 .highlight
 {
     text-decoration: underline;
@@ -165,7 +185,7 @@
 
 .games .text
 {
-    max-width: 30pc;
+  max-width: 30pc;
 }
 
 .games .title
@@ -232,11 +252,6 @@
   margin: 0;
   line-height: 1.2;
 }
-/* Hardware Start */
-
-
-/* Products End */
-
 
 .swiper-pagination-bullet {
   background: #F74641;
