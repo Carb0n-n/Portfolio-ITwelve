@@ -122,6 +122,15 @@
     font-style: italic;
 }
 
+.swiper-wrapper {
+  width: 100%;
+  height: auto !important;
+  padding-bottom: 20px !important;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+
 /* Products Start */
 
 #products .product-box
